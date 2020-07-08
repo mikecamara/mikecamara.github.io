@@ -1,0 +1,285 @@
+<!doctype html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang=""> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang=""> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9" lang=""> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8"> 
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="description" content="Homework app development">
+        <title>Homework</title>
+		<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+        <link rel="manifest" href="/site.webmanifest">
+        
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+        <!-- Optional theme -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+        <!-- Latest compiled and minified JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <!--[if lt IE 8]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+        <main class="bd-masthead" id="content" role="main">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8 order-md-1 text-center text-md-left pr-md-5">
+                        <h1 class="mb-3">BankFinder</h1>
+                        <p class="lead mb-4">
+                            The iOS app downloads and parses three files in JSON format then lists the bank locations in <a href="https://www.swedbank.ee/finder.json">Estonia</a>, <a href="https://ib.swedbank.lv/finder.json">Latvia</a> and <a href="https://ib.swedbank.lt/finder.json">Lithuania</a>.
+                        </p>
+                        <div class="d-flex flex-column flex-md-row">
+                            <a href="https://github.com/mikecamara/BankFinder" class="btn btn-lg btn-primary mb-3">Open Project on GitHub</a>
+                        </div>
+                        <p class="text-muted mb-0">
+                            Currently v1.0
+                        </p>
+                    </div>
+                    <div class="col-6 mx-auto col-md-4 order-md-2">
+                        <div class="square">
+                            <div class="text-center bank">🏦</div>
+                        </div>    
+                    </div>
+                </div>          
+            </div>
+        </main>
+        <hr>
+        <div class="container" style="margin-top: 20px;">
+            <div class="row">
+                <div class="text-center">
+                    <h1>Requirements</h1>
+                </div>
+            </div>
+            <div class="row" style="margin-top: 50px;">
+                <div class="col-md-5">
+                    <h1 class="mb-3">1</h1>
+                    <p class="lead mb-4">
+                        List of all location regions with countries as section headers in alphabetical order.
+                    </p>
+                    <img src="screenshots/threeCountriesRegions.png" class="img-thumbnail" alt="Countries Regions">
+                </div>
+                <div class="col-md-7">
+                    <script src="https://gist.github.com/mikecamara/992bd6011b24876d8e6e2edb3314f20a.js"></script>
+                </div>
+            </div>   
+            
+            <div class="row" style="margin-top: 50px;">
+                <div class="col-md-5">
+                    <h1 class="mb-3">2</h1>
+                    <p class="lead mb-4">
+                        List of all locations in the selected region in alphabetical order.
+                    </p>
+                    <img src="screenshots/regionsBanks.png" class="img-thumbnail" alt="Region Banks">
+                </div>
+                <div class="col-md-7">
+                    <script src="https://gist.github.com/mikecamara/d924be0f9b7ce5bac24ecba33007fdef.js"></script>
+                </div>
+            </div>  
+            
+            <div class="row" style="margin-top: 50px;">
+                <div class="col-md-5">
+                    <h1 class="mb-3">3</h1>
+                    <p class="lead mb-4">
+                        Display the details of the selected location.
+                    </p>
+                    <img src="screenshots/bankDetails.png" class="img-thumbnail" alt="Bank Details">
+                </div>
+                <div class="col-md-7">
+                    <script src="https://gist.github.com/mikecamara/ea9e022318c4b85b04aa86aab6f393f3.js"></script>
+                </div>
+            </div>  
+
+            <div class="row" style="margin-top: 50px;">
+                <div class="col-md-5">
+                    <h1 class="mb-3">4</h1>
+                    <p class="lead mb-4">
+                        The app should download and parse 3 files with bank locations in JSON format.
+                    </p>
+                </div>
+                <div class="col-md-7">
+                    <script src="https://gist.github.com/mikecamara/a32c3e6a366d8911318c6cd32dcdbc7d.js"></script>
+                </div>
+            </div>  
+
+            <div class="row" style="margin-top: 50px;">
+                <div class="col-md-5">
+                    <h1 class="mb-3">5</h1>
+                    <p class="lead mb-4">
+                        The app should save the files or the data in a local storage.
+                    </p>
+                </div>
+                <div class="col-md-7">
+                    <script src="https://gist.github.com/mikecamara/5f5b6e2ec9055b7b4863d6a67345c8d0.js"></script>
+                </div>
+            </div>  
+
+            <div class="row" style="margin-top: 50px;">
+                <div class="col-md-5">
+                    <h1 class="mb-3">6</h1>
+                    <p class="lead mb-4">
+                        The app should allow refreshing on the list of all location regions.
+                    </p>
+                    <img src="screenshots/regionsHomeDarkMode.png" class="img-thumbnail" alt="Bank Regions">
+                </div>
+                <div class="col-md-7">
+                    <script src="https://gist.github.com/mikecamara/532ff615c63b7b108818311e1efa97bd.js"></script>
+                    <script src="https://gist.github.com/mikecamara/c4abe70b1d11099ae6ba626d3e6c8276.js"></script>
+                </div>
+            </div>  
+
+            <div class="row" style="margin-top: 50px;">
+                <div class="col-md-5">
+                    <h1 class="mb-3">7</h1>
+                    <p class="lead mb-4">
+                        The app should redownload the files at launch and on refresh once in 1 hour, otherwise, it should reuse the stored data.
+                    </p>
+                </div>
+                <div class="col-md-7">
+                    <script src="https://gist.github.com/mikecamara/bbbe82333e740c4a9a0107e98683cda9.js"></script>
+                </div>
+            </div>  
+
+
+            <div class="row" style="margin-top: 50px;">
+                <div class="col-md-5">
+                    <h1 class="mb-3">8</h1>
+                    <p class="lead mb-4">
+                        To download the files the app should set the given cookie.
+                    </p>
+                </div>
+                <div class="col-md-7">
+                    <script src="https://gist.github.com/mikecamara/b43dc74f786e3632a8567e4666ffbf43.js"></script>
+                </div>
+            </div>  
+
+            <div class="row" style="margin-top: 50px;">
+                <div class="col-md-5">
+                    <h1 class="mb-3">9</h1>
+                    <p class="lead mb-4">
+                        Use the latest version of Swift and Xcode, follow the Swift API design guidelines and support the latest major iOS versions.
+                    </p>
+                </div>
+                <div class="col-md-7">
+<pre><code>
+    // Built with SwiftUI 
+    // Xcode Version 11.5
+    // iOS 13.5.1
+    // Architecture - Model View ViewModel Pattern (MVVC)
+</code></pre>
+                </div>
+            </div> 
+            
+            <div class="row" style="margin-top: 50px;">
+                <div class="col-md-5">
+                    <h1 class="mb-3">10</h1>
+                    <p class="lead mb-4">
+                        Do not use any third-party frameworks of libraries.
+                    </p>
+                </div>
+                <div class="col-md-7">
+<pre><code>
+    // No third-party frameworks of external libraries used
+</code></pre>
+                </div>
+            </div> 
+
+            <div class="row" style="margin-top: 50px;">
+                <div class="col-md-5">
+                    <h1 class="mb-3">11</h1>
+                    <p class="lead mb-4">
+                        Write production-ready code, clean, modular and testable.
+                    </p>
+                </div>
+                <div class="col-md-7">
+                    <script src="https://gist.github.com/mikecamara/09b001a1d3dc9786546af1ad28e22c86.js"></script>
+                    <script src="https://gist.github.com/mikecamara/4abb4c8310baaf3c7f30bc5e4ea4aecc.js"></script>
+                </div>
+            </div>  
+        </div>
+
+        <hr>
+
+        <div class="container" style="margin-top: 20px;">
+            <div class="row">
+                <div class="text-center">
+                    <h1>Done but not required</h1>
+                </div>
+            </div>
+            
+            <div class="row" style="margin-top: 50px;">
+                <div class="col-md-6">
+                    <h3 class="mb-3">Display map of the bank location.</h3>
+                </div>
+                <div class="col-md-6">
+                    <img src="screenshots/bankDetailsDarkMode.png" class="img-thumbnail" alt="Bank Details">
+                </div>
+            </div>
+            
+            <div class="row" style="margin-top: 50px;">
+                <div class="col-md-6">
+                    <h3 class="mb-3">Enable get directions to the bank.</h3>
+                </div>
+                <div class="col-md-6">
+                    <img src="screenshots/getDirectionsToBank.png" class="img-thumbnail" alt="Bank Details">
+                </div>
+            </div>
+
+            <div class="row" style="margin-top: 50px;">
+                <div class="col-md-6">
+                    <h3 class="mb-3">Enable sharing bank details.</h3>
+                </div>
+                <div class="col-md-6">
+                    <img src="screenshots/shareBankDetails.png" class="img-thumbnail" alt="Bank Details">
+                </div>
+            </div>
+
+            <div class="row" style="margin-top: 50px;">
+                <div class="col-md-6">
+                    <h3 class="mb-3">iOS dark mode compatibility.</h3>
+                </div>
+                <div class="col-md-6">
+                    <img src="screenshots/regionBanksDarkMode.png" class="img-thumbnail" alt="Bank Details">
+                </div>
+            </div>
+        </div>
+<style>
+    .bank {
+        font-size: 130px;
+    }
+    .square {
+        border-radius: 25px;
+        margin-top: 50px;
+        width: 200px;
+        height: 200px;
+        background: rgb(10,41,67);
+        background: linear-gradient(183deg, rgba(10,41,67,1) 0%, rgba(28,76,122,1) 35%);
+        -webkit-box-shadow: -2px 13px 29px -3px rgba(0,0,0,0.59);
+        -moz-box-shadow: -2px 13px 29px -3px rgba(0,0,0,0.59);
+        box-shadow: -2px 13px 29px -3px rgba(0,0,0,0.59);
+    }
+    .bd-masthead {
+        padding-top: 5rem;
+        padding-bottom: 5rem;
+    }
+    .bd-masthead {
+        position: relative;
+        padding: 3rem 15px;
+        background: linear-gradient(to right bottom,#f7f5fb 50%,#fff 50%);
+    }
+</style>
+<script>
+    
+    $(document).ready(function(){
+       
+    });
+
+</script>
+   </body>
+</html>
