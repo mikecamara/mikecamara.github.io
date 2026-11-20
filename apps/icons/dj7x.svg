@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" width="128" height="128">
+  <defs>
+    <linearGradient id="djbg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#a78bfa"/>
+      <stop offset="55%" stop-color="#6d28d9"/>
+      <stop offset="100%" stop-color="#18181b"/>
+    </linearGradient>
+    <radialGradient id="djspin" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#fef08a"/>
+      <stop offset="40%" stop-color="#1f1f29"/>
+      <stop offset="100%" stop-color="#0a0a14"/>
+    </radialGradient>
+  </defs>
+  <rect width="128" height="128" rx="28" fill="url(#djbg)"/>
+  <circle cx="40" cy="64" r="22" fill="url(#djspin)" stroke="#0a0a14" stroke-width="2"/>
+  <circle cx="40" cy="64" r="3" fill="#fef08a"/>
+  <circle cx="88" cy="64" r="22" fill="url(#djspin)" stroke="#0a0a14" stroke-width="2"/>
+  <circle cx="88" cy="64" r="3" fill="#fef08a"/>
+  <rect x="58" y="44" width="12" height="40" rx="2" fill="#0a0a14" stroke="#a78bfa" stroke-width="1.5"/>
+  <rect x="60" y="60" width="8" height="3" rx="1" fill="#fef08a"/>
+</svg>
